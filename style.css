@@ -1,0 +1,51 @@
+#Container_Externo{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Container_Interno{
+	background: gray;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#Container_Interno button {
+	width: 100%;
+	height: 60px;
+	font-size: 19px;
+	cursor: pointer;
+}
+
+.labelText{
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.labelText label{
+	min-width: 100px;
+	padding: 10px 20px;
+	font-size: 19px;
+	background: white;
+	border: 1px solid black;
+
+}
+
+.labelText input{
+	padding: 10px 20px;
+	margin-left: 5px; 
+	font-size: 19px;
+}
+
+/*desativar a setinha do input type number*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conversor Binário</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="Container_Externo">
+			<div id="Container_Interno">
+				<div class="labelText">
+					<label>Decimal</label>
+					<input id="decimal" type="number">
+				</div>
+
+				<div class="labelText">
+					<label>Binário</label>
+					<input id="binario" type="number">
+				</div>
+
+				<button id="botao" onclick="conversor.recuperarValores()">Converter</button>
+			</div>
+		</div>
+	</body>
+
+	<script src="script.js"></script>
+
+	<script type="text/javascript"> // bloquear numeros que não são 0 e 1 na caixa binário
+		document.getElementById("binario").onkeypress = function(letra) { 
+			console.log(letra.key)
+		 	var chr = letra.key
+			 if ("01".indexOf(chr) < 0){
+				return false;
+			 }
+		};
+	</script>
+</html>
